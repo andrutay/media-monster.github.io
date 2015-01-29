@@ -1,0 +1,50 @@
+    <head>
+            <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
+  <script src="account.js"></script>
+
+    </head>
+<body>
+        <title>Register - Media Monster</title>
+
+ <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Media Monster</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Register</h1>
+        <div class="form-group" id="email-div">
+        <label id="email-text" class="control-label" for="email"></label>
+        <input id="email" type="text" placeholder="email" class="form-control" oninput="validateEmail()">
+        </div>
+        <div class="form-group" id="password-div">
+        <label id="password-text" class="control-label" for="password"></label>
+        <input id="password" type="password" placeholder="password" class="form-control" oninput="validatePassword()">
+        </div>
+        <div class="form-group" id="confirm-password-div">
+        <label id="confirm-password-text" class="control-label" for="confirm-password"></label>
+        <input id="confirm-password" type="password" placeholder="confirm password" class="form-control" oninput="validateConfirmPassword()">
+        </div>
+        <button class="btn btn-success" onClick="register()" role="button">Register</button>
+        <button type="button" class="btn btn-link">I already have an account!</button>
+      </div>
+    </div> <!-- /container -->
+</body>
